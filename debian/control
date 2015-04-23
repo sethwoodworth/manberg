@@ -1,0 +1,11 @@
+Source: manberg
+Maintainer: seth wolfwood <seth@sethish.com>
+Section: misc
+Priority: optional
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 9)
+
+Package: manberg
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: A library available via man

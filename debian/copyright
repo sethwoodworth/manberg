@@ -1,0 +1,7 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0
+Source: https://github.com/sethwoodworth/manberg
+
+Files: *
+Copyright: 2015, seth wolfwood <seth@sethish.com>
+License: CC0
+ Creative Commons Zero 1.0 Universal
