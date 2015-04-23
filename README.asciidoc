@@ -1,0 +1,36 @@
+= Books as manpages
+
+== Extra asciidoc requirements
+
+title must(should?) have a number referring to the manual section.
+(3) refers to the _library_ documentation, I am using this
+
+must have NAME section and a single line that contains a dash in the middle
+(like a command)
+
+  == NAME
+
+  Don Quixote - by foo
+
+
+== Commands
+Create manpage
+
+  a2x --doctype manpage --format manpage donquixote.asciidoc
+
+view manpage
+
+  man -l donquixote.3
+
+http://www.methods.co.nz/asciidoc/chunked/ch24.html[a2x docs]
+
+
+== Building deb
+
+  # DO NOT DO THIS
+  # You don't know me, don't run untested commands via sudo
+  # do not install unknown packages with sudo
+  # this is pre-alpha
+  dpkg-buildpackage -us -uc -b
+  sudo dpkg -i ../*deb
+  sudo apt-get install -f
